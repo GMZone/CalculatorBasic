@@ -21,6 +21,7 @@ def TakeInput_Int():
         except:
             userin = None
         if userin == None:
+            print("Enter a valid number \n")
             continue
         else:
             return userin
@@ -32,13 +33,14 @@ def TakeInput_Str():
         if userin=="add" or userin=="subtract" or userin=="multiply" or userin=="divide":
             return userin
         else:
+            print("Enter valid input \n")
             continue
 
 def GoAgain():
     userin=""
     while True:
         try:
-            userin=input("Type a yes or no").lower()
+            userin=input("Type a yes or no \n").lower()
         except:
             print("")   
         if userin=="yes" or userin=="no":
